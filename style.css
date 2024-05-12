@@ -1,0 +1,168 @@
+body {
+    margin: 0;
+    padding: 60px 0 0 0;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+p {
+    margin: 0;
+    padding: 0;
+}
+
+.calculator {
+    border-top: 8px solid mediumslateblue;
+    border-left: 8px solid mediumslateblue;
+    border-bottom: solid 8px darkslateblue;
+    border-right: solid 8px darkslateblue;
+    border-radius: 16px;
+    background: slateblue;
+    padding: 16px 12px;
+    display: flex;
+    flex-direction: column;
+}
+.display {
+    background: lightslategray;
+    color: darkslategray;
+    padding: 4px;
+    margin: 0 0 8px 0;
+    min-width: 220px;
+    border-top: solid 4px darkslateblue;
+    border-left: solid 4px darkslateblue;
+    border-bottom: solid 4px mediumslateblue;
+    border-right: solid 4px mediumslateblue;
+    border-radius: 6px;
+    flex-basis: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    font-size: 24px;
+}
+
+.keys {
+    display: flex;
+    flex-direction: column;
+    max-width: 245px;
+    gap: 8px;
+}
+
+.inputs {
+    display: flex;
+    margin: 10px 0;
+}
+
+.numpad {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: start;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.numpad > button{
+    border-top: 3px solid skyblue;
+    border-left: 3px solid skyblue;
+    border-bottom: 3px solid royalblue;
+    border-right: 3px solid royalblue;
+    border-radius: 8px;
+    background: cornflowerblue;
+    font-size: 20px;
+    font-weight: 800;
+    color: white;
+    flex-basis: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.numpad > button:active{
+    border-top: 3px solid darkslateblue;
+    border-left: 3px solid darkslateblue;
+    border-bottom: 3px solid cornflowerblue;
+    border-right: 3px solid cornflowerblue;
+    border-radius: 8px;
+    background: royalblue;
+    color: lightslategray;
+}
+
+.numpad > #ac {
+    border-top: 3px solid magenta;
+    border-left: 3px solid magenta;
+    border-bottom: 3px solid mediumvioletred;
+    border-right: 3px solid mediumvioletred;
+    border-radius: 8px;
+    background: deeppink;
+}
+
+.numpad > #ac:active {
+    border-top: 3px solid darkslateblue;
+    border-left: 3px solid darkslateblue;
+    border-bottom: 3px solid magenta;
+    border-right: 3px solid magenta;
+    border-radius: 8px;
+    background: mediumvioletred;
+    color: lightslategray;
+}
+
+.functions {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.functions > button {
+    border-top: 3px solid magenta;
+    border-left: 3px solid magenta;
+    border-bottom: 3px solid mediumvioletred;
+    border-right: 3px solid mediumvioletred;
+    border-radius: 8px;
+    background: deeppink;
+    color: white;
+    min-width: 40px;
+    min-height: 50px;
+    font-size: 20px;
+    font-weight: 800;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.functions > button:active {
+    border-top: 3px solid darkslateblue;
+    border-left: 3px solid darkslateblue;
+    border-bottom: 3px solid magenta;
+    border-right: 3px solid magenta;
+    border-radius: 8px;
+    background: mediumvioletred;
+    color: lightslategray;
+}
+
+#equals {
+    border-top: 3px solid greenyellow;
+    border-left: 3px solid greenyellow;
+    border-bottom: 3px solid limegreen;
+    border-right: 3px solid limegreen;
+    border-radius: 8px;
+    background: lawngreen;
+    color: white;
+    min-width: 40px;
+    min-height: 40px;
+    font-size: 20px;
+    font-weight: 800;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#equals:active {
+    border-top: 3px solid darkslateblue;
+    border-left: 3px solid darkslateblue;
+    border-bottom: 3px solid lawngreen;
+    border-right: 3px solid lawngreen;
+    border-radius: 8px;
+    background: limegreen;
+    color: lightslategray;
+}
