@@ -81,8 +81,8 @@ p {
 .numpad > button:active{
     border-top: 3px solid darkslateblue;
     border-left: 3px solid darkslateblue;
-    border-bottom: 3px solid cornflowerblue;
-    border-right: 3px solid cornflowerblue;
+    border-bottom: 3px solid mediumslateblue;
+    border-right: 3px solid mediumslateblue;
     border-radius: 8px;
     background: royalblue;
     color: lightslategray;
@@ -100,8 +100,8 @@ p {
 .numpad > #ac:active {
     border-top: 3px solid darkslateblue;
     border-left: 3px solid darkslateblue;
-    border-bottom: 3px solid magenta;
-    border-right: 3px solid magenta;
+    border-bottom: 3px solid mediumslateblue;
+    border-right: 3px solid mediumslateblue;
     border-radius: 8px;
     background: mediumvioletred;
     color: lightslategray;
@@ -133,8 +133,8 @@ p {
 .functions > button:active {
     border-top: 3px solid darkslateblue;
     border-left: 3px solid darkslateblue;
-    border-bottom: 3px solid magenta;
-    border-right: 3px solid magenta;
+    border-bottom: 3px solid mediumslateblue;
+    border-right: 3px solid mediumslateblue;
     border-radius: 8px;
     background: mediumvioletred;
     color: lightslategray;
@@ -160,8 +160,8 @@ p {
 #equals:active {
     border-top: 3px solid darkslateblue;
     border-left: 3px solid darkslateblue;
-    border-bottom: 3px solid lawngreen;
-    border-right: 3px solid lawngreen;
+    border-bottom: 3px solid mediumslateblue;
+    border-right: 3px solid mediumslateblue;
     border-radius: 8px;
     background: limegreen;
     color: lightslategray;
