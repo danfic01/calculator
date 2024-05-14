@@ -96,6 +96,7 @@ calculator.addEventListener('click', (event) => {
         case 'equals':
             if(operator === '' || displayText === '') break; // the equals key does nothing if the expression is incomplete: i.e. no operator or no second number
             secondNumber = displayText;
+            operate(parseFloat(firstNumber), parseFloat(secondNumber), operator);
             break;
     }
     
@@ -104,3 +105,49 @@ calculator.addEventListener('click', (event) => {
         display.textContent = displayText; // update the calculator display
     }    
 });
+
+// the operate function takes the user input numbers and operator and sets the display text to the result
+function operate (numA, numB, operation) {
+
+    let result;
+
+    switch (operation) {
+
+        case '+':
+            result = add(numA, numB);
+            break;
+        
+        case '-':
+            result = subtract(numA, numB);
+            break;
+        
+        case '*':
+            result = multiply(numA, numB);
+            break;
+        
+        case '/':
+            result = divide(numA, numB);
+            break;
+    }
+
+    displayText = String(result); // set the display text to the result cast as a string
+    firstNumber = String(result); // set the first number to the result as well so that additional operations can be performed 
+    secondNumber = ''; // reset the second number for the next calculation
+    operator = ''; // reset the operator for the next calculation
+}
+
+function add (numA, numB) {
+    return numA + numB;
+}
+
+function subtract (numA, numB) {
+    return numA - numB;
+}
+
+function multiply (numA, numB) {
+    return numA * numB;
+}
+
+function divide (numA, numB) {
+    return numA / numB;
+}
